@@ -12,6 +12,9 @@ Original firmware and inskcape extension: https://github.com/evil-mad/EggBot
  * Aluminium rod 8mm diameter, 120mm long
  * Spring 11mm diameter, 54mm long
  * Arm axis: Steel wire 1mm. 50mm long.
+ * 2x Servo-Screws 10mm x 2mm
+ * 1mm steel wire (axle)
+ * rubber bands (for lowering the arm)
 
 ## ULN2003 assembly for unmodified EggDuino firmware
 
