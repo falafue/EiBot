@@ -31,10 +31,13 @@ I choose the Nano, because it has pinheaders already soldered,
 so that I can use only dupont cables without much soldering to connect 
 the ULN-boards. 
 
-The +5V and GND connections needs some soldering, we do not have enough pins on the board.
-For the 5V connection I build a triple Y-Cable, with three female and one male
-dupont connector. For the GND connections a simple Y-Cable is sufficient, with
-two female and one female end.
+The +5V and GND connections needs some soldering, as we do not have enough 
+pins on the board. The easiest is a 2x8 pinheader, each row of 8 soldered 
+together, with a thin piece of wire. One row serves ase a GND distributor, the 
+other row as a VCC distributor. 
+The only other soldering is two dupong cables to the power connector.
+The distribution rails have 3 unused connetors each, sufficient for 
+adding the buttons.
 
 ### Pin assignment
                      
@@ -47,7 +50,7 @@ Arduino         ULN2003 rotation motor
  * D5 ----------- IN4
  * GND ------+--- (-)                      Servo cable
              +---------------------------- (*) brown  GND
- * 5V ----+------ (+)
+ * VIN ---+------ (+)
           |
           +------------------------------- (*) red    VCC 
           |
