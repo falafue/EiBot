@@ -62,7 +62,10 @@ Arduino         ULN2003 rotation motor
  * D7 ----------- IN3
  * D9 ----------- IN4
  * D10 ----------------------------------- (*) orange PWM
+ 
 </pre>
+
+TODO: Buttons?
 
 <img height=200 src="https://github.com/falafue/EiBot/raw/master/photos/20180402_154731.jpg"/>&nbsp;<img height=200 src="https://github.com/falafue/EiBot/raw/master/photos/20180402_160306.jpg"/></br>
 <img src="https://github.com/falafue/EiBot/raw/master/photos/20180402_161511.jpg"/></br>
