@@ -12,3 +12,52 @@ Original firmware and inskcape extension: https://github.com/evil-mad/EggBot
  * Aluminium rod 8mm diameter, 120mm long
  * Spring 11mm diameter, 54mm long
  * Arm axis: Steel wire 1mm. 50mm long.
+
+## ULN2003 assembly for unmodified EggDuino firmware
+
+Studying https://github.com/russhughes/EggDuino/blob/master/EggDuino.ino
+we find the electical connections.
+
+I have two boards
+
+* Arduino Pro Micro with ATMEGA 32U4
+* Arduino Nano with ATMEGA328P and CH340G
+
+The boards have enough GND pins, two on the Nano, three on the Pro Micro. 
+I need three, one for each ULN-Board and one for the servo.
+Both boards only have one 5V (VCC) pin, I also need three.
+
+I choose the Nano, because it has pinheaders already soldered, 
+so that I can use only dupont cables without much soldering to connect 
+the ULN-boards. 
+
+The +5V and GND connections needs some soldering, we do not have enough pins on the board.
+For the 5V connection I build a triple Y-Cable, with three female and one male
+dupont connector. For the GND connections a simple Y-Cable is sufficient, with
+two female and one female end.
+
+### Pin assignment
+                     
+<pre>
+Arduino         ULN2003 rotation motor
+
+ * D2 ----------- IN1
+ * D4 ----------- IN2
+ * D3 ----------- IN3
+ * D5 ----------- IN4
+ * GND ------+--- (-)                      Servo cable
+             +---------------------------- (*) brown  GND
+ * 5V ----+------ (+)
+          |
+          +------------------------------- (*) red    VCC 
+          |
+          |     ULN2003 pen motor         
+          +------ (+) 
+ * GND ---------- (-)
+ * D6 ----------- IN1
+ * D8 ----------- IN2
+ * D7 ----------- IN3
+ * D9 ----------- IN4
+ * D10 ----------------------------------- (*) orange PWM
+</pre>
+
