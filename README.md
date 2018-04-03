@@ -75,9 +75,14 @@ TODO: Buttons?
 
 ### Blinky blinky tests
 
+Try the Examples -> Blink sketch.
 The Arduino Nano has an LED on pin 13, as expected. The Pro Micro does not.
 It has leds on RXD and TXD. The RXD pin is pin 17, blinks nicely, but would not receive any
-serial data, while doing so. Select 'Arduino/Genuino Micro' in the IDE for the Pro Micro.
+serial data, while doing so. For the Pro Micro select 'Arduino/Genuino Micro' and add the line
+
+    #define LED_BUILTIN 17
+
+near the top of the code.
 
 If your board does not respond to initial programming, you might have a cheap clone without
 a bootloader installed.
