@@ -1,9 +1,11 @@
 # EiBot
 Remix of https://wiki.section77.de/projekte/eggbot77-2018-eh-edition
 
+Dokumentation at https://fablab-wuerzburg.dozuki.com/c/EiBot
+
 Suggested Inkscape extension for eggbot: https://github.com/section77/eggbot_extension
 
-Firmware tested: https://github.com/russhughes/EggDuino
+Firmware tested: https://github.com/falafue/EggDuino
 
 Original firmware and inskcape extension: https://github.com/evil-mad/EggBot
 
@@ -66,9 +68,13 @@ Arduino         ULN2003 rotation motor
  * D9 ----------- IN4
  * D10 ----------------------------------- (*) orange PWM
 
+                   Buttons
+ * A0 ------------------- STOP ---+
+ * D11 ------------------- PEN ---+
+ * D12 ------------------- MOT ---+
+                                  |
+ * GND ---------------------------+
 </pre>
-
-TODO: Buttons?
 
 <img height=200 src="https://github.com/falafue/EiBot/raw/master/photos/20180402_154731.jpg"/>&nbsp;<img height=200 src="https://github.com/falafue/EiBot/raw/master/photos/20180402_160306.jpg"/></br>
 <img src="https://github.com/falafue/EiBot/raw/master/photos/20180402_161511.jpg"/></br>
